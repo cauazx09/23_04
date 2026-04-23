@@ -12,7 +12,7 @@ function Cardapio() {
   // useEffect que o professor vai passar
  
 useEffect(() => {
-    fetch('https://www.themealdb.com/api/json/v1/1/filter.php?c=Seafood')
+    fetch('https://www.themealdb.com/api/json/v1/1/filter.php?c=Dessert')
       .then(response => response.json())
       .then(data => setPratos(data.meals))
       .catch(error => console.error('Erro ao carregar o cardápio:', error))
